@@ -8,5 +8,6 @@ int main(int argc, char** argv) {
     }
 }
 void counting_function(int a) {
-    std::cout << "Êîëè÷åñòâî âûçîâîâ ôóíêöèè " << __FUNCSIG__ <<": " << a + 1 << std::endl;
+    std::cout << "ÃŠÃ®Ã«Ã¨Ã·Ã¥Ã±Ã²Ã¢Ã® Ã¢Ã»Ã§Ã®Ã¢Ã®Ã¢ Ã´Ã³Ã­ÃªÃ¶Ã¨Ã¨ " << __FUNCSIG__ <<": " << a + 1 << std::endl;
+
 }
