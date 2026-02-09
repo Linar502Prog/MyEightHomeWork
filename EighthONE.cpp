@@ -1,13 +1,15 @@
 #include <iostream>
-void counting_function(int a);
+void counting_function();
 
 int main(int argc, char** argv) {
     setlocale(LC_ALL, "RUS");
-    for (static int i = 0; i < 15; i++) {
-        counting_function(i);
+    for (int i = 0; i < 15; i++) {
+        counting_function();
     }
 }
-void counting_function(int a) {
-    std::cout << "Êîëè÷åñòâî âûçîâîâ ôóíêöèè " << __FUNCSIG__ <<": " << a + 1 << std::endl;
-
+void counting_function() {
+    static int i;
+    std::cout << "Количество вызовов функции " << FUNCSIG <<": " << i + 1 << std::endl;
+    i++;
 }
+
